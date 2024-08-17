@@ -1,23 +1,8 @@
-"use client";
-import { useEffect } from "react";
-
-interface Restaurant {
-  id: number;
-  name: string;
-}
 interface RestaurantListProps {
-  loadRestaurants: () => void;
   restaurants: Restaurant[];
 }
 
-export default function RestaurantList({
-  loadRestaurants,
-  restaurants,
-}: RestaurantListProps) {
-  useEffect(() => {
-    loadRestaurants();
-  }, [loadRestaurants]);
-
+export default function RestaurantList({ restaurants }: RestaurantListProps) {
   return (
     <div>
       <ul>
