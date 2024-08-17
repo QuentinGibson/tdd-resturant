@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
+    "types": ["react", "jest", "node", "trusted-types", "jest-extended"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -26,7 +27,14 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "tests/simple.spec.js"
+    "tests/simple.spec.js",
+    "app/components/RestaurantList.spec.jsx"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules",
+    "./cypress.config.ts",
+    //other exclusions that may help https://github.com/cypress-io/cypress/issues/22059#issuecomment-1428298264
+    "cypress",
+    "**/*.cy.tsx"
+  ]
 }

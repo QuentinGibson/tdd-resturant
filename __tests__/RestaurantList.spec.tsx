@@ -1,9 +1,9 @@
 /**
  * @jest-environment jsdom
  */
+import { render, screen } from "@testing-library/react";
+import RestaurantList from "@/app/components/RestaurantList";
 
-import RestaurantList from "./RestaurantList";
-import { render } from "@testing-library/react";
 describe("RestaurantList", () => {
   it("loads restaurants on first render", () => {
     const loadRestaurants = jest.fn().mockName("loadRestaurants");
