@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
-    "types": ["react", "jest", "node", "trusted-types", "jest-extended"],
+    "types": ["react", "jest", "node"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
